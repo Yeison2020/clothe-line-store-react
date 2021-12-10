@@ -1,0 +1,212 @@
+.reduce-row-size {
+  margin: 0;
+}
+
+/* .reduce-row-size:hover {
+  transform: scale(1);
+} */
+
+.p-about > h3 {
+  font-size: 1.3rem;
+  font-weight: 200px;
+}
+
+.card {
+  overflow-y: hidden;
+  overflow-x: scroll;
+  width: 350px;
+  border: none;
+  height: 350px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.card::-webkit-scrollbar {
+  display: none;
+}
+
+.p-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-price {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+}
+
+.heart i {
+  font-size: 50px;
+  opacity: 0;
+  color: red;
+}
+
+.heart i:hover {
+  color: red;
+}
+
+.p-image img {
+  padding-top: 10px;
+  padding-right: 10px;
+  transition: all 0.5s;
+}
+
+.price-item {
+  background-color: #fffcdc;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  padding: 10px 10px 10px 10px;
+}
+img {
+  border-style: solid;
+}
+.name-images {
+  font-size: 1.3rem;
+  font-weight: 200px;
+}
+
+.p-image img {
+  padding-right: 10px;
+  width: 240px;
+  height: 300px;
+
+  border-radius: 10px;
+}
+
+.card:hover .heart i {
+  animation: heart 300ms ease-in forwards;
+  animation-delay: 500ms;
+}
+.p-about {
+  position: absolute;
+  width: 170px;
+  font-size: 10px;
+  top: 140px;
+  left: -125px;
+  opacity: 0;
+}
+
+.card:hover .p-about {
+  animation: content 300ms ease-in forwards;
+}
+
+@keyframes content {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    left: 25px;
+  }
+}
+
+@keyframes heart {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.card:hover .p-image img {
+  animation: onimage 300ms ease-in forwards;
+}
+
+.card:hover .p-price {
+  animation: onprice 500ms ease-in forwards;
+}
+
+@keyframes onprice {
+  0% {
+    right: 10px;
+    top: 20px;
+  }
+
+  50% {
+    right: 60px;
+    top: 30px;
+  }
+
+  100% {
+    right: 267px;
+    top: 70px;
+  }
+}
+
+@keyframes onimage {
+  0% {
+    width: 250px;
+  }
+
+  50% {
+    width: 200px;
+    transform: translateY(-30px);
+    transform: translateX(100px);
+  }
+  100% {
+    width: 180px;
+    top: 100px;
+    transform: translateY(100px);
+    transform: translateX(110px);
+  }
+}
+
+.buttons {
+  position: absolute;
+  bottom: -150px;
+}
+
+.card:hover .buttons {
+  animation: buttons 500ms ease-in forwards;
+}
+
+@keyframes buttons {
+  0% {
+    bottom: -100px;
+  }
+
+  100% {
+    bottom: 20px;
+  }
+}
+
+.btn-sign {
+  padding: 6px 15px;
+  font-size: 1rem;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #e50914;
+  cursor: pointer;
+  font-weight: 600;
+  border: none;
+  margin-right: -0.5rem;
+}
+
+.btn-sign {
+  background-color: #000000;
+  background: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+}
+.btn-sign-return {
+  padding: 6px 15px;
+  font-size: 1rem;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  border: none;
+
+  background-color: #000000;
+  background: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+}
+
+.btn-view {
+  margin-right: 0.6rem;
+}
+
+.btn-buynow {
+  margin-right: 5rem;
+}
